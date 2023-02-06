@@ -1,0 +1,70 @@
+.portada{
+    background-color: $bg-black-primary;
+    height: calc(100vh - 4.0625rem);
+
+    @include flex(row, space-evenly, center);
+
+    @include media(){
+        @include flex(row, center, center);
+        text-align: center;
+    }
+
+    &__info{
+        max-width: 35.25rem;
+        padding: 1.25rem;
+    }
+    &__nombre{
+        font-family: $font-jetbrains;
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 0 0 .9375rem 0;
+        color: $color-text-white;
+
+    }
+    &__carrera{
+        font-family: $font-jetbrains;
+        word-break: break-all;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 2.1875rem;
+        color: $color-text-white;
+        margin: 0 0 1.5625rem 0;
+    }
+    &__imgcontent{
+        @include media(){
+            display: none;
+        }
+    }
+    &__img{
+        max-width: 18.75rem;
+        max-height: 18.75rem;
+        border-radius: 50%;
+    }
+
+    &__svg{
+        color: black;
+    }
+
+    &__btn{
+        text-decoration: none;
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        font-family: $font-jetbrains;
+        padding: .625rem 1.25rem;
+        border-radius: 3.125rem;
+        cursor: pointer;
+        transition: 0.3s ease all;
+        display: inline-block;
+        
+        &:hover{
+            background-color: rgb(199, 199, 199);
+        }
+        
+        &:active{
+            transform: scale(.95);
+        }
+
+
+    }
+}

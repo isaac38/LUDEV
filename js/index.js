@@ -3,13 +3,14 @@ $(document).ready(function() {
     owl.owlCarousel({
         items: 4,
         loop: true,
-        margin: 110,
+        margin: 200,
         autoplay: true,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
         dots: false,
         nav: false,
         lazyLoad: true,
+        center: true,
         responsive:{
             0:{
                 items:1

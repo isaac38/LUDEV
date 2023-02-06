@@ -1,0 +1,101 @@
+.contacto{
+    background-color: $bg-black-secondary;
+    @include flex(column, center, center);
+    &__content{
+        margin: 3.125rem 0;
+        width: 100%;
+    }
+    &__title{
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-family: $font-jetbrains;
+        color: $color-text-white;
+        padding: 0 0 2.5rem 0;
+    }
+    &__redes{
+        @include flex(row, space-around, center);
+        flex-wrap: wrap;
+    }
+    &__icon{
+    }
+    &__link{
+        @include flex(row, center, center);
+        background-color: $bg-black-primary;
+        height: 3.75rem;
+        width: 3.75rem;
+        padding: auto;
+        text-decoration: none;
+        border-radius: 50%;
+        border: white solid .125rem;
+        cursor: pointer;
+        transition: 0.5s ease all;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    
+        &:active {
+            transform: scale(0.95);
+        }
+
+        &.linkedin:hover{
+            background-color: #0e76a8;
+        }
+        &.dribbble:hover{
+            background-color: #EA4C89;
+        }
+        &.whatsapp:hover{
+            background-color: #25D366;
+        }
+        &.gmail:hover{
+            background-color: #CC3C2F;
+        }
+    }
+
+    &__linkgradiant{
+        @include flex(row, center, center);
+        position: relative;
+        background-color: $bg-black-primary;
+        height: 3.75rem;
+        width: 3.75rem;
+        text-decoration: none;
+        border-radius: 50%;
+        border: white solid .125rem;
+        cursor: pointer;
+        z-index: 1;
+        transition: 0.5s ease all;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    
+        &:active {
+            transform: scale(0.95);
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            background: radial-gradient(circle at top left,#405DE6, #5851DB, #833AB4, #C13584, #E1306C,#FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+            z-index: -1;
+            transition: opacity 0.5s linear;
+            opacity: 0;
+        }
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+
+    
+    
+    &__svg{
+        color: $color-text-white;
+        width: $width-icon-contacto;
+    }
+}

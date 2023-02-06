@@ -1,0 +1,28 @@
+.skills{
+    background-color: $bg-black-secondary;
+    display: flex;
+    flex-direction: column nowrap;
+
+    &__content{
+        width: 100%;
+        margin: 3.125rem 0;
+
+    }
+    &__tittle{
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-family: $font-jetbrains;
+        color: white;
+        padding: 0 0 2.5rem 0;
+
+    }
+    &__corousel{
+    }
+
+
+    &__img{
+        width: 100%;
+        object-fit:scale-down;
+    }
+
+}

@@ -1,0 +1,62 @@
+.experiencia{
+    @include flex(column, center, center);
+    background-color: $bg-black-secondary;  
+    &__content{
+        margin: 3.125rem 0;
+    }
+    &__title{
+        font-size: 2.5rem;
+        text-align: end;
+        font-weight: bold;
+        font-family: $font-jetbrains;
+        color: $color-text-white;
+        padding: 0 0 2.5rem 0;
+    }
+    &__trabajos{
+        @include flex(row, center, center);
+        @include media(){
+            @include flex(column, center, center);
+        }
+    }
+    /*&__trabajo1{
+        background-color: yellow;
+        padding: .9375rem;
+        font-family: $font-jetbrains;
+
+    }*/
+    &__trabajo{
+        padding: .9375rem;
+        font-family: $font-jetbrains;
+        color: $color-text-white;
+        @include media(){
+            text-align: center;
+        }
+    }
+
+    
+    &__titletrabajo{
+        font-size: 1.875rem;
+        font-weight: bold;
+        padding-bottom: .75rem;
+    }
+    &__cargo{
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding-bottom: .75rem;
+    }
+    &__tiempo{
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding-bottom: .75rem;
+    }
+    &__text{
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 2.1875rem;
+        padding-bottom: .75rem;
+    }
+    &__location{
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+}
