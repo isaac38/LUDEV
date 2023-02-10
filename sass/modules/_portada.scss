@@ -1,6 +1,6 @@
 .portada{
     background-color: $bg-black-primary;
-    height: calc(100vh - 4.0625rem);
+    height: 100vh;
 
     @include flex(row, space-evenly, center);
 

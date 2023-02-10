@@ -1,0 +1,49 @@
+.sidebar{
+    background-color: $bg-black-primary;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    height: 100vh;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+
+    @include media(){display: block;}
+
+    &__content{
+        @include flex(column, start, center);
+    }
+
+    &__menu{
+        background-color: $bg-black-secondary;
+        width: 100%;
+        @include flex(row, end, center);
+        padding: .9375rem 0;
+    }
+    &__btn{
+        background-color: $bg-black-secondary;
+        margin: 0 .9375rem 0 0;
+    }
+    &__svg{
+        color: $color-text-white;
+        width: 2.1875rem;
+    }
+    &__links{
+        width: 100%;
+        padding: 0 0 0 .9375rem;
+    }
+    &__ul{
+        list-style: none;
+    }
+    &__li{
+        margin: 1.25rem 0;
+
+    }
+    &__link{
+        font-family: $font-jetbrains;
+        color: $color-text-white;
+        font-weight: bold;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+}

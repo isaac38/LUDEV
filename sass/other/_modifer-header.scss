@@ -1,0 +1,15 @@
+.header{
+    &--fixed-top{
+        position: fixed;
+        top: 0rem;
+    }
+
+    &__link{
+        &--active{
+            background-color: white;
+            border-radius: 3.125rem;
+            color: black;
+        }
+    }
+}
+

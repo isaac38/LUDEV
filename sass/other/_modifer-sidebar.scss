@@ -1,0 +1,11 @@
+.sidebar{
+    
+    &--open{
+        width: 50%;
+    }
+
+    &--close{
+        width: 0;
+    }
+
+}

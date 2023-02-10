@@ -1,0 +1,12 @@
+.footer{
+    @include flex(row, center, center);
+    background-color: $bg-black-primary;
+    padding: .625rem 0;
+
+    &__content{
+    }
+    &__text{
+        font-family: $font-jetbrains;
+        color: $color-text-white; 
+    }
+}

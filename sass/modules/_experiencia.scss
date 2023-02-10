@@ -11,6 +11,10 @@
         font-family: $font-jetbrains;
         color: $color-text-white;
         padding: 0 0 2.5rem 0;
+        @include media(){
+            text-align: center;
+            font-size: 1.875rem;
+        }
     }
     &__trabajos{
         @include flex(row, center, center);
@@ -18,22 +22,12 @@
             @include flex(column, center, center);
         }
     }
-    /*&__trabajo1{
-        background-color: yellow;
-        padding: .9375rem;
-        font-family: $font-jetbrains;
-
-    }*/
     &__trabajo{
         padding: .9375rem;
         font-family: $font-jetbrains;
         color: $color-text-white;
-        @include media(){
-            text-align: center;
-        }
+        @include media(){text-align: center;}
     }
-
-    
     &__titletrabajo{
         font-size: 1.875rem;
         font-weight: bold;

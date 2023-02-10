@@ -1,0 +1,15 @@
+.skills{
+    &__li{
+        &--active{
+            background-color: white;
+            border-radius: 3.125rem;
+            color: black;
+        }
+    }
+
+    &__items{
+        &--active{
+            display: block;
+        }
+    }
+}

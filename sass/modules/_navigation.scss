@@ -4,8 +4,6 @@
     &__content{
         @include flex(row, space-between, center);
         padding: .9375rem 0;
-
-        
     }
 
     &__img{
@@ -21,15 +19,14 @@
         @include media(){display: block;}
     }
 
-    &__btnmenu{
+    &__btn{
         background-color: $bg-black-primary;
     }
 
 
-    &__svgmenu{
-        color: white;
-        height: 1.5625rem;
-        width: 1.5625rem;
+    &__svg{
+        color: $color-text-white;
+        width: 2.1875rem;
     }
 
     &__nav{
@@ -54,16 +51,10 @@
         padding: .1875rem .3125rem;
         transition: 0.3s;
 
-        &.active{
-            background-color: white;
-            border-radius: 3.125rem;
-            color: black;
-        }
-
         &:hover{
-            background-color: white;
+            background-color: $bg-white;
             border-radius: 3.125rem;
-            color: black;
+            color: $color-text-black;
         }
     }
 }
